@@ -9,7 +9,7 @@ This Dockerfile project creates a web project image up [thinkrapido/docker-lamp]
 
 ## Prerequisites
 
-First create a lamp image as described in [thinkrapido/docker-lamp][2].
+First create a lamp image as described in [thinkrapido/docker-lamp][1].
 
 ## Usage
 
@@ -21,6 +21,15 @@ cd docker-lamp-sekeleton
 ```
 
 ### Copy your php project into webapp folder
+
+The config for the mysql server should be:
+
+```
+hostname: localhost
+database: webapp
+user:     root
+password: root
+```
 
 ### Install dependencies
 
@@ -37,20 +46,11 @@ file is present in webapp folder.
 ./build.sh
 ```
 
-If your web project contains a data/fixture folder it will get the latest of your database fixtures and dumps it into the mysql server.
+If your web project contains a `data/fixture` folder it will get the latest of your database fixtures and dumps it into the mysql server.
 
-This folder will be sorted by name the first one with extension `.sql`.
+This folder will be sorted by name and the first one with extension `.sql` will be selected.
 
 The files in it should have a file name like this: `fixture-2014-12-14.sql`.
-
-The config for the mysql server should be:
-
-```
-hostname: localhost
-database: webapp
-user:     root
-password: root
-```
 
 ### Run it
 
@@ -80,7 +80,7 @@ mysql -u root -p root -h 127.0.0.1
 
 Feel free to look in every file and customize them to your needs.
 
-If you use a PHP framework like Zend Framework 2 the `index.php` resides in folder `webapp/public`. To get access to its `index.php`, adjust the `vhost.conf` file (DocumentRoot and Directory entries)
+If you use a PHP framework like Zend Framework 2 the `index.php` resides in folder `webapp/public`. To get access to it, adjust the `vhost.conf` file. (DocumentRoot and Directory entries)
 
 ---
 
