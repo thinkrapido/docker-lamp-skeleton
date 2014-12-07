@@ -1,0 +1,12 @@
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.12. Set the 'ServerName' directive globally to suppress this message
+[Sat Dec 06 14:47:32.659723 2014] [mpm_prefork:notice] [pid 100] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.5 OpenSSL/1.0.1f configured -- resuming normal operations
+[Sat Dec 06 14:47:32.659765 2014] [core:notice] [pid 100] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Sat Dec 06 14:49:21.406169 2014] [mpm_prefork:notice] [pid 100] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.13. Set the 'ServerName' directive globally to suppress this message
+[Sat Dec 06 14:49:28.111864 2014] [mpm_prefork:notice] [pid 102] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.5 OpenSSL/1.0.1f configured -- resuming normal operations
+[Sat Dec 06 14:49:28.111903 2014] [core:notice] [pid 102] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Sat Dec 06 14:50:05.971312 2014] [mpm_prefork:notice] [pid 102] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.14. Set the 'ServerName' directive globally to suppress this message
+[Sat Dec 06 14:50:20.778323 2014] [mpm_prefork:notice] [pid 104] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.5 OpenSSL/1.0.1f configured -- resuming normal operations
+[Sat Dec 06 14:50:20.778364 2014] [core:notice] [pid 104] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Sat Dec 06 14:50:27.382559 2014] [mpm_prefork:notice] [pid 104] AH00169: caught SIGTERM, shutting down
