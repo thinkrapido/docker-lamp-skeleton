@@ -18,6 +18,7 @@ First create a lamp image as described in [thinkrapido/docker-lamp][1].
 ```
 git clone https://github.com/thinkrapido/docker-lamp-skeleton.git
 cd docker-lamp-sekeleton
+chmod u+x *.sh
 ```
 
 ### Copy your php project into webapp folder
